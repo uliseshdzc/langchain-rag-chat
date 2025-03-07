@@ -34,7 +34,6 @@ else:
         embedding=embeddings,
         persist_directory=persist_vector_directory
     )
-    vector_store.persist()
 
 retriever = vector_store.as_retriever()
 
